@@ -12,6 +12,7 @@ public class UsaEstoque {
 		estoque1.darBaixa(5);
 		estoque2.repor(7);
 		estoque3.darBaixa(4);
+		
 		if(estoque1.precisaRepor())
 		{
 			System.out.println("Estoque 1 precisa de reposiçao.");
