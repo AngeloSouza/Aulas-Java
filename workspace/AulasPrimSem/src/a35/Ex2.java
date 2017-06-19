@@ -34,22 +34,35 @@ public class Ex2 {
 		teto=extracted().nextFloat();
 	}
 	
-	public void minimiza(){
+	public void mini(){
+		
 		for(int i=0;i<nomes.size();i++){
-			nomes.add(nomes.remove(i).toLowerCase());
+				nomes.set(i, nomes.get(i).toLowerCase());		
 		}
 		
-		for(String c : nomes){
-			System.out.println(c);
+	}
+	
+	public void reajuste(){
+		for(int i=0;i<salario.size();i++){
+			if(salario.get(i)<teto){
+				float resp=salario.get(i)+(salario.get(i)/porcent);
+				salario.set(i, resp);
+				nomes.set(i, nomes.get(i).toUpperCase());		
+			}
 		}
-		
 	}
 	
 	public static void main(String[] args) {
 		Ex2 c=new Ex2();
 		c.lerInformacao();
 		c.segundaInformacao();
-		c.minimiza();
+		c.mini();
+		c.reajuste();
+		
+		for(int i=0;i<salario.size();i++){
+			System.out.println(nomes.get(i)+" tem o salario de "+salario.get(i));
+		}
+		
 
 	}
 
