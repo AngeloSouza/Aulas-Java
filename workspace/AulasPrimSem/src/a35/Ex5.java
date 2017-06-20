@@ -14,6 +14,7 @@ public class Ex5 {
 			nome.add(in.nextLine());
 			
 		}
+		in.close();
 	}
 	
 	

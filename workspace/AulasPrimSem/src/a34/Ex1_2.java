@@ -18,7 +18,7 @@ public class Ex1_2 {
 		nota[i][1]=in.nextFloat();
 		System.out.println("informe a nota 3");
 		nota[i][2]=in.nextFloat();
-			
+		in.close();	
 	}
 
 	private void mostraInformaçao(){

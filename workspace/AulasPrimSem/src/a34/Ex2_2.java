@@ -17,6 +17,7 @@ public class Ex2_2 {
 				
 			}
 		}
+		in.close();
 	}
 
 	

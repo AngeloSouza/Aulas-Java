@@ -35,7 +35,7 @@ public class Ex2 {
 		x=in.nextInt();
 		System.out.println("informe a coluna");
 		y=in.nextInt();
-		
+		in.close();
 	}
 	
 	private void validaJogada(){

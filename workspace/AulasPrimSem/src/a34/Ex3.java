@@ -15,6 +15,7 @@ public class Ex3 {
 				mat[j][i]=in.nextFloat();
 			}
 		}
+		in.close();
 	}
 	
 	private void lerLinha(){
@@ -22,7 +23,7 @@ public class Ex3 {
 		
 		System.out.println("informe a linha a ser somada");
 		linha=in.nextInt();
-		
+		in.close();
 	}
 	
 	private float calcular(int l){

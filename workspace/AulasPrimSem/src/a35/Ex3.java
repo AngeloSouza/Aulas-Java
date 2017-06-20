@@ -15,6 +15,7 @@ public class Ex3 {
 		}else{
 			System.out.println("indice informado invalido!");
 		}
+		in.close();
 	}
 
 	public void lerInformacao(){
@@ -24,6 +25,7 @@ public class Ex3 {
 			System.out.println("informe o nome:");
 			nomes.add(new Scanner(System.in).nextLine());
 		}
+		
 	}
 	
 	public static void main(String[] args) {

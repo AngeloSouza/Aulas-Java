@@ -25,7 +25,7 @@ public class Ex1 {
 		for(int i=1;i<resp.length;i++){
 			System.out.println(resp[i-1]+r);
 		}
-		
+		in.close();
 
 	}
 
